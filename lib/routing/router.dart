@@ -1,3 +1,5 @@
+import 'package:compra_webapp/pages/add-categories/add_categories_page.dart';
+import 'package:compra_webapp/pages/add-products/add_products_page.dart';
 import 'package:compra_webapp/pages/products/products.dart';
 import 'package:flutter/material.dart';
 import 'package:compra_webapp/pages/clients/clients.dart';
@@ -15,6 +17,10 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       return _getPageRoute(const ProductsPage());
     case clientsPageRoute:
       return _getPageRoute(const ClientsPage());
+    case addproductsPageRoute:
+      return _getPageRoute(const AddProductsPage());
+    case addcategoriesPageRoute:
+      return _getPageRoute(const AddCategoriesPage());
     default:
       return _getPageRoute(const OverviewPage());
   }

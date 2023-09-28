@@ -1,7 +1,9 @@
+import 'package:compra_webapp/pages/add-products/widgets/add_products.dart';
 import 'package:data_table_2/data_table_2.dart';
 import 'package:flutter/material.dart';
 import 'package:compra_webapp/constants/style.dart';
 import 'package:compra_webapp/widgets/custom_text.dart';
+import 'package:get/get.dart';
 
 /// Example without datasource
 class ProductsTable extends StatelessWidget {
@@ -26,7 +28,7 @@ class ProductsTable extends StatelessWidget {
         borderRadius: BorderRadius.circular(8),
       ),
       padding: const EdgeInsets.all(16),
-      margin: const EdgeInsets.fromLTRB(10, 100, 10, 10),
+      // margin: const EdgeInsets.only(bottom:10),
       child: SizedBox(
         height: (60 * 7) + 40,
         child: DataTable2(
@@ -79,7 +81,9 @@ class ProductsTable extends StatelessWidget {
                           // ),
                           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                           child: ElevatedButton(
-                            onPressed: _snowSnack, 
+                            onPressed: (){
+                              
+                            }, 
                             child: const Text("Active"),
                           ),
                           // child: CustomText(

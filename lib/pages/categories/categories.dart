@@ -1,9 +1,11 @@
+import 'package:compra_webapp/pages/add-categories/widgets/add_categories.dart';
 import 'package:flutter/material.dart';
 import 'package:compra_webapp/constants/controllers.dart';
 import 'package:compra_webapp/helpers/reponsiveness.dart';
 import 'package:compra_webapp/pages/categories/widgets/categories_table.dart';
 import 'package:compra_webapp/widgets/custom_text.dart';
 import 'package:get/get.dart';
+import 'package:velocity_x/velocity_x.dart';
 
 class CategoriesPage extends StatelessWidget {
   const CategoriesPage({Key? key}) : super(key: key);
@@ -24,6 +26,18 @@ class CategoriesPage extends StatelessWidget {
                   )),
             ],
           ),
+        ),
+        100.heightBox,
+        Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: <Widget>[
+            ElevatedButton(
+              onPressed: () {
+                Get.to(() => const CategoriesAdditionScreen());
+              },
+              child: const Text('Add Categories'),
+            ),
+          ],
         ),
         Expanded(
             child: ListView(
