@@ -9,6 +9,12 @@ const categoriesPageRoute = "/categories";
 const productsPageDisplayName = "Products";
 const productsPageRoute = "/products";
 
+const addproductsPageDisplayName = "Add Products";
+const addproductsPageRoute = "/addproducts";
+
+const addcategoriesPageDisplayName = "Add Categories";
+const addcategoriesPageRoute = "/addcategories";
+
 const clientsPageDisplayName = "Customers";
 const clientsPageRoute = "/clients";
 

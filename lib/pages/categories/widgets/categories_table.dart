@@ -28,7 +28,7 @@ class CategoriesTable extends StatelessWidget {
         borderRadius: BorderRadius.circular(8),
       ),
       padding: const EdgeInsets.all(16),
-      margin: const EdgeInsets.fromLTRB(10, 100, 10, 10),
+      // margin: const EdgeInsets.fromLTRB(10, 100, 10, 10),
       child: SizedBox(
         height: (60 * 7) + 40,
         child: DataTable2(

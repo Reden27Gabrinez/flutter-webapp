@@ -1,14 +1,13 @@
+import 'package:compra_webapp/pages/add-categories/widgets/add_categories.dart';
 import 'package:compra_webapp/pages/add-products/widgets/add_products.dart';
 import 'package:flutter/material.dart';
 import 'package:compra_webapp/constants/controllers.dart';
 import 'package:compra_webapp/helpers/reponsiveness.dart';
-import 'package:compra_webapp/pages/products/widgets/products_table.dart';
 import 'package:compra_webapp/widgets/custom_text.dart';
 import 'package:get/get.dart';
-import 'package:velocity_x/velocity_x.dart';
 
-class ProductsPage extends StatelessWidget {
-  const ProductsPage({Key? key}) : super(key: key);
+class AddCategoriesPage extends StatelessWidget {
+  const AddCategoriesPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -27,22 +26,9 @@ class ProductsPage extends StatelessWidget {
             ],
           ),
         ),
-        100.heightBox,
-        Row(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: <Widget>[
-            ElevatedButton(
-              onPressed: () {
-                Get.to(() => const ProductAdditionScreen());
-              },
-              child: const Text('Add Products'),
-            ),
-          ],
-        ),
-        Expanded(
-            child: ListView(
-          children: const [ProductsTable()],
-        )),
+   
+         const CategoriesAdditionScreen(),
+
       ],
     );
   }

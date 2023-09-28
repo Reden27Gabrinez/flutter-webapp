@@ -7,6 +7,7 @@ import 'package:compra_webapp/pages/404/error.dart';
 import 'package:compra_webapp/pages/authentication/authentication.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 import 'routing/routes.dart';
 
